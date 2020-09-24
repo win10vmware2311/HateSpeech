@@ -12,7 +12,6 @@ from sklearn import preprocessing
 from sklearn.preprocessing import LabelEncoder
 le = preprocessing.LabelEncoder()
 from sklearn.model_selection import learning_curve
-#from sklearn.externals import joblib
 
 def clean_tweets(df):
     df['Tweets']=df['Tweets'].str.lower()
@@ -22,7 +21,6 @@ def clean_tweets(df):
 # preprocess data
 df=pd.read_csv('/Users/Desktop/CompiledTweets2.csv',encoding='ISO-8859-1')
 df.columns=['Labels','Tweets']
-# del df['Id'], df['Date'], df['Query'], df['User']
 df['Labels']=df['Labels'].map({1:'Negative',0:'Positive'})
 df = df.sample(frac=0.1).reset_index(drop=True)
 df=clean_tweets(df)
