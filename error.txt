@@ -1,5 +1,5 @@
 Traceback (most recent call last):
-  File "/Users/sunny/Desktop/AlphaQuantum.py", line 46, in <module>
+  File "/Users/Desktop/AlphaQuantum.py", line 46, in <module>
     print(classification_report(y_test, y_pred))
   File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/sklearn/utils/validation.py", line 72, in inner_f
     return f(**kwargs)
